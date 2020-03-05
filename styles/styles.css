@@ -37,9 +37,12 @@ button {
     width: 50px;
     margin: 3px;
     margin-top: 3px;
-    background-color: whitesmoke;
     border-radius: 5px;
     border: 2px solid black;
+}
+
+.number {
+    background-color: whitesmoke;
 }
 
 .operations {
