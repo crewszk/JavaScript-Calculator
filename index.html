@@ -20,10 +20,10 @@
         <!-- The controls of the calculator -->
         <div class="controls">
             <div>
-                <button id="left-parenthesis" value="(" class="operations"><b>(</b></button>
-                <button id="right-parenthesis" value=")" class="operations"><b>)</b></button>
-                <button id="clear" class="operations"><b>AC</b></button>
-                <button id="backspace" class="operations"><</button>
+                <button id="left-parenthesis" value="(" class="parenthesis"><b>(</b></button>
+                <button id="right-parenthesis" value=")" class="parenthesis"><b>)</b></button>
+                <button id="clear" onclick="clearInput()"><b>AC</b></button>
+                <button id="backspace" onclick="backspace()"><</button>
             </div>
             <div>
                 <button id="seven" value="7" class="number">7</button>
@@ -46,13 +46,12 @@
             <div>
                 <button id="zero" value="0" class="number">0</button>
                 <button id="period" value="." class="number">.</button>
-                <button id="equals" class="operations"><b>=</b></button>
+                <button id="equals" onclick="evaluateEquation()"><b>=</b></button>
                 <button id="add" value="+" class="operations"><b>+</b></button>
             </div>
 
         </div>
     </div>
     <script type="text/javascript" src="./scripts/operations.js"></script>
-    <script type="text/javascript" src="./scripts/buttonStyling.js"></script>
 </body>
 </html>
