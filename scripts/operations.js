@@ -44,6 +44,9 @@ function addNumber(num) {
     else if(num == '.') {
         period = true;
     }
+    else if(num == '0' && docInput.value == '') {
+        return;
+    }
 
     docInput.value += num;
     isNum = true;
@@ -80,8 +83,15 @@ function addParenthesis(parenthesis) {
     let last = docEquation.value.charAt(docEquation.value.length - 1);
     if(parenthesis == '(') {
         pCount++;
+        if(docInput.value != '') {
+            equation[eCount++] = docInput.value;
+            docEquation.value += docInput.value;
+            equation[eCount++] = '*';
+            docEquation.value += '*';
+        }
         equation[eCount++] = parenthesis;
         docEquation.value += parenthesis;
+        docInput.value = '';
     }
     else {
         if(pCount > 0 && (last != '(' || docInput.value != '')) {
@@ -129,4 +139,6 @@ function evaluateEquation() {
     docEquation.value += '=';
     remainder = true;
     period = false;
+    eCount = 0;
+    equation = [];
 }
