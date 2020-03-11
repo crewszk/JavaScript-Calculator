@@ -40,21 +40,23 @@ input {
 }
 
 button {
-    flex: 1;
+    display: flex;
     padding: 13px;
     width: 50px;
     margin: 3px;
     margin-top: 3px;
     border-radius: 5px;
     border: 2px solid black;
+    background-color: lightgray;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(162, 224, 214);
 }
 
 .number {
     background-color: whitesmoke;
-}
-
-.operations {
-    background-color: lightgray;
 }
 
 p {
