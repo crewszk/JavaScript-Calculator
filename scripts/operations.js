@@ -92,6 +92,7 @@ function addParenthesis(parenthesis) {
         equation[eCount++] = parenthesis;
         docEquation.value += parenthesis;
         docInput.value = '';
+        period = false;
     }
     else {
         if(pCount > 0 && (last != '(' || docInput.value != '')) {
@@ -102,7 +103,8 @@ function addParenthesis(parenthesis) {
             }
             equation[eCount++] = parenthesis;
             docEquation.value += parenthesis;
-            docInput.value = '';            
+            docInput.value = '';    
+            period = false;        
         }
     }
 }
@@ -110,6 +112,8 @@ function addParenthesis(parenthesis) {
 function clearInput() {
     docInput.value = '';
     docEquation.value = '';
+    remainder = false;
+    period = false;
 }
 
 function backspace() {
