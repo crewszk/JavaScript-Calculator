@@ -11,10 +11,10 @@
 
         <!-- The input view of the calculator showing operations -->
         <div class="equation">
-            <span class="italic"><input id="equation" type="text" placeholder="0"></span>
+            <span class="italic"><input id="equation" type="text" placeholder="0" readonly></span>
         </div>
         <div class="inputView">
-            <input id="input" type="text" placeholder="0">
+            <input id="input" type="text" placeholder="0" readonly>
         </div>
 
         <!-- The controls of the calculator -->
@@ -51,6 +51,9 @@
             </div>
 
         </div>
+    </div>
+    <div>
+        <button class="history" onclick="toggleHistory()">History</button>
     </div>
     <script type="text/javascript" src="./scripts/operations.js"></script>
 </body>
