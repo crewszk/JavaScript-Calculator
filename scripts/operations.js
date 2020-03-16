@@ -187,6 +187,9 @@ function zeroRemover() {
         zero.shift();
     }
     docInput.value = zero.join("");
+    if(docInput.value.length == 0) {
+        docInput.value = '0';
+    }
 }
 
 //Push the equation and answer to the history stacks
