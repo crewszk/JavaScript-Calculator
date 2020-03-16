@@ -11,6 +11,7 @@ To-Do List:
 - Add a side button to extend the calculator to be a scientific calculator with more operands like exponents, logorithms, trig functions, etc.
 - Add input checking for above operators and functions
 - Add evaluation & infix > postfix conversion for above operators and functions
+- Add and finish History button functionality for the last 5 equations and answers
 
 Updates:
 
