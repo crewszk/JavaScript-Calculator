@@ -81,9 +81,11 @@ function addOperator(operator) {
         if(docEquation.value == '') {
             return;
         }        
-        else if(last != '(' && isNaN(last) == true && last != ')') {
-            equation.pop();
-            docEquation.value = docEquation.value.substring(0, docEquation.value.length - 1);
+        else if(last != '(' && isNaN(last) == true) {
+            if(last != ')') {
+                equation.pop();
+                docEquation.value = docEquation.value.substring(0, docEquation.value.length - 1);
+            }
         }
         //Ignore input, operators after left parenthesis are illogical
         else {
