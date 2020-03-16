@@ -1,4 +1,4 @@
-# JavaScript Calculator v0.2
+# JavaScript Calculator v0.3
 
 Used as practice for manipulating HTML documents with JavaScript, its a simple calculator with interactable buttons a working calculating interface.
 It supports addition, subtraction, division, and multiplication. As well as parenthesis operations.
@@ -14,6 +14,11 @@ To-Do List:
 - Add and finish History button functionality for the last 5 equations and answers
 
 Updates:
+
+v0.3 :
+- Fixed leading operator illogical inputs
+- Fixed parenthesis illogical input bugs
+- Added input error message when an illogical equation tries to be evaluated
 
 v0.2 :
 - Made textfields readonly
